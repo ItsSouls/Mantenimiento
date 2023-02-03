@@ -61,4 +61,8 @@ class FactorialTest {
 
         assertEquals(expectedValue,obtainedValue);
     }
+    @Test
+    void factorialOfMinusOneIs(){
+        assertThrows(RuntimeException.class, () -> factorial.compute(-1));
+    }
 }

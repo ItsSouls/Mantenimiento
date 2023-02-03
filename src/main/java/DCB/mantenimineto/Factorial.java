@@ -1,8 +1,11 @@
 package DCB.mantenimineto;
 public class Factorial {
     public int compute(int value) {
-        int result;
-        if((value == 0)){
+        int result = 0;
+
+        if(value < 0){
+            throw new RuntimeException("The value" + value + "is negative");
+        }else if((value == 0)){
             result = 1;
         }else{
             return value * compute(value-1);
