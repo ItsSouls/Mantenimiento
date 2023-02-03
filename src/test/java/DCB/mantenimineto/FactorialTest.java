@@ -15,7 +15,7 @@ import static org.junit.jupiter.api.Assertions.*;
  */
 
 class FactorialTest {
-    Factorial facorial;
+    Factorial factorial;
     @BeforeEach
     void setup(){
         factorial = new Factorial();
@@ -35,7 +35,7 @@ class FactorialTest {
     }
     @Test
     void factorialOfOneIsOne(){
-         int obtainedValue = factorial.cogmpute(1);
+         int obtainedValue = factorial.compute(1);
         int expectedValue = 1;
 
         assertEquals(expectedValue,obtainedValue);
