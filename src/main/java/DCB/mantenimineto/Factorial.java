@@ -19,5 +19,8 @@ public class Factorial {
         }
         return result;
     }
+    void f(){
+        //hhhh
+    }
 }
 
