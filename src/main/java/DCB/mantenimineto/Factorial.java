@@ -1,4 +1,8 @@
 package DCB.mantenimineto;
+
+/**
+ * Class providing a method to compute the factorial of an integer number
+ */
 public class Factorial {
     public int compute(int value) {
         int result = 0;
