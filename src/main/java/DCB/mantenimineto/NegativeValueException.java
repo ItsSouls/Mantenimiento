@@ -1,2 +1,7 @@
-package DCB.mantenimineto;public class NegativeValueException {
+package DCB.mantenimineto;
+
+public class NegativeValueException extends RuntimeException{
+    public NegativeValueException(String errormessage) {
+        super(errormessage);
+    }
 }

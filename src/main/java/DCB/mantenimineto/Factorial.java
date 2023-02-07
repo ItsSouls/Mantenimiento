@@ -4,7 +4,7 @@ public class Factorial {
         int result = 0;
 
         if(value < 0){
-            throw new RuntimeException("The value" + value + "is negative");
+            throw new NegativeValueException("The value" + value + "is negative");
         }else if((value == 0)){
             result = 1;
         }else{
