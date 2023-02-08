@@ -1,0 +1,1 @@
+Durante el desarrollo solo me he equivocado que al referenciar una variable puse n, en vez de number.
