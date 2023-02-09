@@ -1,4 +1,0 @@
-mvn compile --> compila y muestra si tiene o no un error
-mvn test --> hace los test
-mvn package
-mvn clean
