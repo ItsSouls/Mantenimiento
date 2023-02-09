@@ -12,11 +12,12 @@ public class PersonTest {
     @BeforeEach
     void setup(){
         Person Margarita = new Person("Mar", 8, "Female");
-        Person Paco = new Person("Mal", 9, "Female");
+        Person Paco = new Person("Paco", 9, "Male");
         lista = new ArrayList<>();
         lista.add(Paco);
         lista.add(Margarita);
     }
+
 
     @Test
     void CorrectGender(){
@@ -43,9 +44,6 @@ public class PersonTest {
     void ListIsNotEmpty(){
         assertFalse(lista.isEmpty());
     }
-
-
-
 }
 
 
