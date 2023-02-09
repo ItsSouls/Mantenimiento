@@ -40,19 +40,25 @@ public class Person {
      * @param person
      * @return
      */
-    public double[] averageAgePerGender(List<Person> persons){
+    public double[] averageAgePerGender(List<Person> persons) {
         double acummale = 0, contmale = 0;
-        double acumfemale = 0,contfemale = 0;
+        double acumfemale = 0, contfemale = 0;
 
         for (Person person : persons) {
-            if(person.gender.compareTo("Male") == 0){
+            if (person.gender.compareTo("Male") == 0) {
                 acummale += person.age;
                 ++contmale;
-            }else{
+            } else {
                 acumfemale += person.age;
                 ++contfemale;
             }
         }
-        return new double[]{acummale/contmale, acumfemale/contfemale};
+        if (acummale == 0) {
+            return new double[]{0, acumfemale / contfemale};
+        } else if (acumfemale == 0) {
+            return new double[]{acummale / contmale, 0};
+        } else {
+            return new double[]{acummale / contmale, acumfemale / contfemale};
+        }
     }
 }
