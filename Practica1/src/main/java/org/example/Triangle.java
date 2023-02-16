@@ -21,7 +21,7 @@ public class Triangle {
   public TriangleType getType(double side1, double side2, double side3) {
     TriangleType result;
 
-    /*// IMPLEMENTATION 1
+    // IMPLEMENTATION 1
     if (((side1 == 0) || (side2 == 0)) || (side3 == 0)) {
       throw new RuntimeException("At least one side has length 0");
     }
@@ -50,10 +50,10 @@ public class Triangle {
       } else {
         result = TriangleType.ISOSCELES;
       }
-    }*/
+    }
 
 
-    // IMPLEMENTATION 2
+    /*// IMPLEMENTATION 2
     var sides = new ArrayList<>(List.of(side1, side2, side3));
     Collections.sort(sides);
 
@@ -74,7 +74,7 @@ public class Triangle {
       case 3 -> TriangleType.SCALENE;
       case 1 -> TriangleType.EQUILATERAL;
       default -> TriangleType.ISOSCELES;
-    };
+    };*/
 
     return result;
   }
