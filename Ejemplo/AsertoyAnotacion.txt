@@ -1,0 +1,6 @@
+Anotación => En anotaciones he elegido @Tag, me ha parecido interesante que puedas usar un tag para agrupar ciertos test y con un filtro de
+ejecución poder ejecutar solo ese grupo de tests, simplemente añades @Tag("Nombre") y listo, le veo la ventaja de poder ejecutar tests en 
+diferentes etapas/partes del proyecto.
+Aserto => En los aertos he elegido el aserto fail, que te permite dar una breve descripción en un fail forzado, por ejemplo, cuando no has 
+terminado un test o falla y no lo arreglaste todavía, le pones un fail y entre parentesis su descripción y queda aclarado el porqué da error,
+le veo una ventaja clara en la comunicación entre programadores de un mismo proyecto.
