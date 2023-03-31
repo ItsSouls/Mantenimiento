@@ -22,6 +22,7 @@ class PlateauBranchCoverageTest {
         assertThrows(IllegalArgumentException.class, () -> longestPlateau(array));
     }
 
+
     @Test
     void BranchCoverage() {
         array = new int[]{0,1,3,3,3,3,2,1};

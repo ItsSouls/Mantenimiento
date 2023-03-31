@@ -17,14 +17,10 @@ class PlateauConditionCoverageTest {
     }
 
     @Test
-    void ConditionCoverageExceptionWithOneCondition() {
+    void ConditionCoverageExceptionWithFirstCondition() {
         assertThrows(IllegalArgumentException.class, () -> longestPlateau(array));
-    }
-
-    @Test
-    void ConditionCoverageExceptionWithoutAnyCondition() {
-        array = new int[]{1,2,3};
-        assertDoesNotThrow(() -> longestPlateau(array));
+        array = new int[]{1,2};
+        assertThrows(IllegalArgumentException.class, () -> longestPlateau(array));
     }
 
     @Test
@@ -38,8 +34,17 @@ class PlateauConditionCoverageTest {
 
     @Test
     void CoverageForIfStatementLoop() {
-        array = new int[]{1,2,2,1};
-        int position = 1;
+        array = new int[]{1,5,5,5};
+        int position = -1;
+        int length = 0;
+        assertEquals(position, longestPlateau(array).position());
+        assertEquals(length, longestPlateau(array).length());
+    }
+
+    @Test
+    void CoverageForIfStatementLoop2() {
+        array = new int[]{0,1,2,2,1,4,2};
+        int position = 2;
         int length = 2;
         assertEquals(position, longestPlateau(array).position());
         assertEquals(length, longestPlateau(array).length());
